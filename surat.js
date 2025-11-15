@@ -21,7 +21,7 @@ var requestOptions = {
 };
 
 fetch(
-  'https://quran.ppqita.my.id/api/quran?surat=1&token=TADABBUR_ariska138',
+  `https://quran.ppqita.my.id/api/quran?surat=${id}&token=TADABBUR_ariska138`  ,
   requestOptions
 )
   .then((response) => response.json())
