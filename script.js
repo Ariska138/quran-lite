@@ -1,5 +1,3 @@
-let repo = '/quran-lite';
-
 let requestOptions = {
   method: 'GET',
   redirect: 'follow',
@@ -19,7 +17,7 @@ fetch(
 
       const link = document.createElement('a');
       link.textContent = `${data.nomor}. ${data.nama_latin}`;
-      link.href = repo + '/surat/?id=' + data.nomor;
+      link.href = repo + '/surat.html?id=' + data.nomor;
       item.appendChild(link);
 
       root.appendChild(item);
